@@ -9,7 +9,7 @@
 #define BUFFER_SIZE 2048
 
 int clients[MAX_CLIENTS];
-pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER; 
 
 void broadcast(char *message, int sender_fd) {
     pthread_mutex_lock(&lock);
